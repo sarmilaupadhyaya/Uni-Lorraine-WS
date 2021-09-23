@@ -1,0 +1,34 @@
+## missed first part
+
+
+
+## 	Introduction to stochastic grammars
+
+
+- Probability od a tree is product of probability of all the rules required to construct it
+
+- similarly, probability of getting all child from single parent when summed would be 1
+
+- Given a grammar and tree corpus C, the probability of a rule r_i per se is:
+
+
+- N(r_i)/sum of all the number of rules which has same left hand side as the r_i
+
+
+
+#Practice
+#
+#Given a following sentences: bac, bccac, bac, bccccac, da, dcca, dccca, dccc
+#
+
+S=>bc, ccac
+
+Hence, probability of bcccac, would be 0.5*0.5*0.5*0.22*0.57*0.277= 0.004354
+
+
+
+
+
+
+
+
