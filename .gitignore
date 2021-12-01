@@ -1,5 +1,8 @@
 *.Swp
 .token
-speech?processing/practical/td_corpus_digits
+speech?processing/practical/td_corpus_digits/*
+__pycache__/
+
+
 
 
