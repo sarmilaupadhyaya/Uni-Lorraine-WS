@@ -172,10 +172,7 @@ signal-to-noise ratio (SNR). Furthermore, in this report fluctuations in results
 
 ## Installation
 
-Note: Since, the project has three models as the pipeline running serially, it requires some memory space and RAM. Make sure you have around 3 GB physical disk space, 4 GB RAM and enough space to install the requirements. 
-
-In order to get the model to run, follow these installation instructions.
-
+view the requirements.txt file and install the packages.
 
 <!-- ### Requirements -->
 Pre-requisites:
@@ -258,28 +255,51 @@ _Optional_: If you're on Mac.
     brew install wget
 
 ---
-#### 6. You also need to download the spacy model:
-
-    python -m spacy download en_core_web_lg
-
----
-
-### 7. Initial Downloads
-
-orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-
-************************************************************************************************************************************
-**_YAY!!_** Installation is done! Now you can jump to the execution part and run the web app.
-
 
 ## Execution
-**!!!** Before running the application, make sure to change the ```ROOT_PATH``` variable in the ```.env``` file to the path of your project.
 
-To run the webapp, run the following code, being in the root directory.
+Step 1: According to task, I have different files. You can run the task1, task2, task3 and 4 with:
 
-    python3 src/views.py
+```
+bash my_task/run_task1.sh
+bash my_task/run_task2.sh
+bash my_task/run_task3.sh
+bash my_task/run_task4.sh
+```
 
+Step 2: getting wer using for each typw of prediction using bash file
+
+- For task 1
+
+```
+bash my_task/run_task1.sh -lm <language model, either ngram, 1digit, 3digits or 5digits>
+
+Usage : Script -lm <language model>
+```
+
+- For task 2
+
+```
+bash my_task/run_task2.sh -m <agegroup, man, woman, girl or boy> -lm <language model digitloop, 1digit, 3digits, 5digits>
+
+Usage : Script -m <age group> -lm <language model>
+```
+
+- For Task 3
+
+```
+bash my_task/run_task3.sh -m <agegroup, man, woman, girl or boy> -lm <language model 1digit, 3digits, 5digits or digitloops>
+
+Usage : Script -m <age group> -lm <language model>
+```
+
+- For Task 4
+
+```
+bash my_task/run_task4.sh -n <SNR value either 05, 15,25, 35> -lm <language model 1digit, 3digits, 5digits or digitloops>
+
+Usage : Script -n <noise ratio> -lm <language model>
+```
 ---
 
 
