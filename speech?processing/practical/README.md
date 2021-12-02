@@ -311,10 +311,11 @@ Besides, I created a lexical dictionary of digits which is available in ps_data/
 ## Results
 Tabular form of wer and confidence interval is below.
 - Task 1: WER for man digit corpus with 35 db SNR
+<!-- TABLE_GENERATE_START -->
 Language Model | #ngram | #1 digit | #3 digits | #5 digits | #digitloop 
 --- | --- | --- | --- |--- |---
 WER | 12.3  |10.5  |15  |11.3  |23.6
-
+<!-- TABLE_GENERATE_END -->
 - Task 2: Different age group data with 35 db SNR for 1 digit corpus
 Language Model | #Man | #Woman  | #Girl | #boy 
 --- | --- | --- | --- |--- |---
