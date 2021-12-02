@@ -310,8 +310,45 @@ Besides, I created a lexical dictionary of digits which is available in ps_data/
 
 ## Results
 Tabular form of wer and confidence interval is below.
+- Task 1: WER for man digit corpus with 35 db SNR
+Language Model | #ngram | #1 digit | #3 digits | #5 digits | #digitloop 
+--- | --- | --- | --- |--- |---
+WER | 12.3  |10.5  |15  |11.3  |23.6
 
+- Task 2: Different age group data with 35 db SNR for 1 digit corpus
+Language Model | #Man | #Woman  | #Girl | #boy 
+--- | --- | --- | --- |--- |---
+WER | 10.5  |10.5  | 24  | 17.5
 
+Different age group data with 35 db SNR for 3 digits corpus
+Language Model | #Man | #Woman  | #Girl | #boy 
+--- | --- | --- | --- |--- |---
+WER | 15   |10   | 22.6   | 20
+
+Different age group data with 35 db SNR for 5 digits corpus
+Language Model | #Man | #Woman  | #Girl | #boy
+--- | --- | --- | --- |--- |---
+WER |  11.31   |7.8   |26.8   |18 
+
+- Task 3 WER for Man and Woman corpus with 35 db SNR for different digits grammar
+Language Model | #Man-1digit   |#Man-3Digit   |#Man-5Digit   |#Woman-1digit   |#Woman-3Digit   |#Woman-5Digit 
+--- | --- | --- | --- |--- |---
+WER | 10.5   | 15   | 11.2   | 10.5   | 10   | 7.8
+
+- Task 4: WER for man with different SNR for 1 digit corpus
+Language Model | #SNR35   | #SNR25   | #SNR15   | #SNR05 
+--- | --- | --- | --- |--- |---
+WER | 10.5   |11.5   | 18   | 94.697
+
+WER for man with different SNR for 3 digits corpus
+Language Model | #SNR35   | #SNR25   | #SNR15   | #SNR05 
+--- | --- | --- | --- |--- |---
+WER | 15   |16.6   |19.67   |93.237
+
+WER for man with different SNR for 5 digits corpus
+Language Model | #SNR35   | #SNR25   | #SNR15   | #SNR05 
+--- | --- | --- | --- |--- |---
+WER |  11.3   |11.4   |16.97   |76.27
 ## Licence
 [MIT](https://choosealicense.com/licenses/mit/)
 
