@@ -15,35 +15,151 @@ Lexicons and language models for ASR using pocketsphinx experiments –
 
 ## Directory structure
 
-├── ps_data   #this structure was provided in the lab. only modification is that a new lex/digits.dict is added
-|
-├── ps_exemples # contains code snippet to run the asr model using different langauge model
-|
-├── td_corpus_digits # supposed to contain the digit corpus
-|
-├── documents 
-|   |
-│   └── report.pdf #report of the experiment
-├── my_task 
-|   |
-│   ├── run_task1.sh ## running the main task where the prediction is generated based on task
+
+.
+├── my_task   ## the main program I added for 4 tasks
+│   ├── decoder_jsgf.py   #modified asr model with jsgf grammar
+│   ├── decoder_ngram.py   #modified asr model with ngram
+│   ├── generation.py       #main file that takes parameters and run different task. this is called by bash files 
+│   ├── run_task1.sh    # bash file to run task number 1
 │   ├── run_task2.sh
-|   |── run_task3.sh
+│   ├── run_task3.sh
 │   ├── run_task4.sh
-│   ├── run_wer_task1.sh ## bash script that inputs the parameters and give out the wer calculated
-│   └── run_wer_task2.sh
-|   |── run_wer_task3.sh
+│   ├── run_wer_task1.sh   #bash file that after getting prediction calculate wer for task 1
+│   ├── run_wer_task2.sh
+│   ├── run_wer_task3.sh
 │   ├── run_wer_task4.sh
-│   ├── task1_wer.py ## python script where wer values are manually plotted with there confidence interval
-│   └── task2_wer.py
-|   ├── task3_wer.py
+│   ├── task1_wer.py    #simple python script to plot wer and its confidence interval
+│   ├── task2_wer.py
+│   ├── task3_wer.py
 │   └── task4_wer.py
-|   └── generation.py ##main python file which takes the argument and gives out prediction according to parameters
-|   ├── decoder_jsgf.py ## model with jsgf grammar
-│   └── decoder_ngram.py ## model with ngram model
-|   ├── images/ ## plots of wer rate with confidence interval
-|
-├── README.md 
+├── ps_data  #provided in the lab. I only added lexical dictionary called digits.dict
+│   ├── exemple
+│   │   └── goforward.raw
+│   ├── jsgf
+│   │   ├── digits.gram
+│   │   └── goforward.gram
+│   ├── lex
+│   │   ├── cmudict-en-us.dict
+│   │   ├── digits.dict  # added by me
+│   │   ├── script_to_get_lex.py
+│   │   └── turtle.dic
+│   ├── lm
+│   │   ├── en-us.lm.bin
+│   │   └── turtle.lm.bin
+│   ├── model
+│   │   └── en-us
+│   │       ├── feat.params
+│   │       ├── mdef
+│   │       ├── means
+│   │       ├── noisedict
+│   │       ├── README
+│   │       ├── sendump
+│   │       ├── transition_matrices
+│   │       └── variances
+│   └── test-digits
+│       ├── SNR05dB_man_seq1digit_001.raw
+│       ├── SNR05dB_man_seq1digit_001.ref
+│       ├── SNR05dB_man_seq1digit_002.raw
+│       └── SNR05dB_man_seq1digit_002.ref
+├── ps_exemples
+│   ├── 1
+│   ├── decoder_jsgf.py
+│   ├── decoder_ngram.py
+│   ├── decoder_utt_jsgf.py
+│   └── decoder_utt_ngram.py
+├── README.md
+├── results   # results for prediction and plot of wer and confidence interval
+│   ├── figures
+│   ├── task1
+│   │   ├── pred_35man1digit
+│   │   ├── pred_35man3digits
+│   │   ├── pred_35man5digits
+│   │   ├── pred_35mandigitloop
+│   │   ├── pred_35manngram
+│   │   ├── ref_35man1digit
+│   │   ├── ref_35man3digits
+│   │   ├── ref_35man5digits
+│   │   ├── ref_35mandigitloop
+│   │   └── ref_35manngram
+│   ├── task2
+│   │   ├── pred_35boy1digit
+│   │   ├── pred_35boy3digits
+│   │   ├── pred_35boy5digits
+│   │   ├── pred_35girl1digit
+│   │   ├── pred_35girl3digits
+│   │   ├── pred_35girl5digits
+│   │   ├── pred_35man1digit
+│   │   ├── pred_35man3digits
+│   │   ├── pred_35man5digits
+│   │   ├── pred_35woman1digit
+│   │   ├── pred_35woman3digits
+│   │   ├── pred_35woman5digits
+│   │   ├── ref_35boy1digit
+│   │   ├── ref_35boy3digits
+│   │   ├── ref_35boy5digits
+│   │   ├── ref_35girl1digit
+│   │   ├── ref_35girl3digits
+│   │   ├── ref_35girl5digits
+│   │   ├── ref_35man1digit
+│   │   ├── ref_35man3digits
+│   │   ├── ref_35man5digits
+│   │   ├── ref_35woman1digit
+│   │   ├── ref_35woman3digits
+│   │   └── ref_35woman5digits
+│   ├── task3
+│   │   ├── pred_35man1digit
+│   │   ├── pred_35man3digits
+│   │   ├── pred_35man5digits
+│   │   ├── pred_35mandigitloop
+│   │   ├── pred_35manngram
+│   │   ├── pred_35woman1digit
+│   │   ├── pred_35woman3digits
+│   │   ├── pred_35woman5digits
+│   │   ├── pred_35womandigitloop
+│   │   ├── pred_35womanngram
+│   │   ├── ref_35man1digit
+│   │   ├── ref_35man3digits
+│   │   ├── ref_35man5digits
+│   │   ├── ref_35mandigitloop
+│   │   ├── ref_35manngram
+│   │   ├── ref_35woman1digit
+│   │   ├── ref_35woman3digits
+│   │   ├── ref_35woman5digits
+│   │   ├── ref_35womandigitloop
+│   │   └── ref_35womanngram
+│   └── task4
+│       ├── pred_05man1digit
+│       ├── pred_05man3digits
+│       ├── pred_05man5digits
+│       ├── pred_15man1digit
+│       ├── pred_15man3digits
+│       ├── pred_15man5digits
+│       ├── pred_25man1digit
+│       ├── pred_25man3digits
+│       ├── pred_25man5digits
+│       ├── pred_35man1digit
+│       ├── pred_35man3digits
+│       ├── pred_35man5digits
+│       ├── ref_05man1digit
+│       ├── ref_05man3digits
+│       ├── ref_05man5digits
+│       ├── ref_15man1digit
+│       ├── ref_15man3digits
+│       ├── ref_15man5digits
+│       ├── ref_25man1digit
+│       ├── ref_25man3digits
+│       ├── ref_25man5digits
+│       ├── ref_35man1digit
+│       ├── ref_35man3digits
+│       └── ref_35man5digits
+├── TD-Sphinx-2019-Additional_Information.pdf
+├── TD-Sphinx-2019-SetUp.pdf
+├── toto.hyp
+├── toto.ref
+└── tree.txt
+
+16 directories, 125 files
 
     
 
