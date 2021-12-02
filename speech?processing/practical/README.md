@@ -267,7 +267,7 @@ bash my_task/run_task3.sh
 bash my_task/run_task4.sh
 ```
 
-Step 2: getting wer using for each typw of prediction using bash file
+Step 2: getting wer using for each type of prediction using bash file
 
 - For task 1
 
@@ -302,22 +302,15 @@ Usage : Script -n <noise ratio> -lm <language model>
 ```
 ---
 
-
 ## Dataset
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+I used td_corpus, a digit corpus provided in the lab
+Besides, I created a lexical dictionary of digits which is available in ps_data/lex/digits.dict
 
+---
 
+## Result
+Tabular form of wer and confidence interval is below.
 
-### x DATASET
-
-
-### y Dataset
-
- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## Licence
 [MIT](https://choosealicense.com/licenses/mit/)
