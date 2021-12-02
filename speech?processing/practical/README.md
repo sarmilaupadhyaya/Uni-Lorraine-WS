@@ -15,7 +15,7 @@ Lexicons and language models for ASR using pocketsphinx experiments –
 
 ## Directory structure
 
-
+```
 .
 ├── my_task   ## the main program I added for 4 tasks
 │   ├── decoder_jsgf.py   #modified asr model with jsgf grammar
@@ -160,7 +160,7 @@ Lexicons and language models for ASR using pocketsphinx experiments –
 └── tree.txt
 
 16 directories, 125 files
-
+```
     
 
 
