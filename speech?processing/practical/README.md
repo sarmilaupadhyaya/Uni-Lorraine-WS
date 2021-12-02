@@ -9,7 +9,7 @@ Lexicons and language models for ASR using pocketsphinx experiments –
 3. [Installation](#installation)
 4. [Dataset](#dataset)
 5. [Execution](#execution)
-5. [Contributing](#contributing)
+5. [Results](#results)
 6. [Licence](#licence)
 
 
@@ -308,7 +308,7 @@ Besides, I created a lexical dictionary of digits which is available in ps_data/
 
 ---
 
-## Result
+## Results
 Tabular form of wer and confidence interval is below.
 
 
