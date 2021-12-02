@@ -331,7 +331,7 @@ Language Model | #Man | #Woman  | #Girl | #boy
 WER |  11.31   |7.8   |26.8   |18 
 
 - Task 3 WER for Man and Woman corpus with 35 db SNR for different digits grammar
-Language Model | #Man-1digit   |#Man-3Digit   |#Man-5Digit   |#Woman-1digit   |#Woman-3Digit   |#Woman-5Digit 
+Language Model | #Man-1digit   | #Man-3Digit   | #Man-5Digit   | #Woman-1digit   | #Woman-3Digit   | #Woman-5Digit 
 --- | --- | --- | --- |--- |---
 WER | 10.5   | 15   | 11.2   | 10.5   | 10   | 7.8
 
