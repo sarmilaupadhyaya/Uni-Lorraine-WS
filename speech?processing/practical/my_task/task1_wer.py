@@ -10,14 +10,12 @@ def get_confidence_interval(wer, words):
 
 # this was for man with 35 SNR db data with 5 different models
 language_models = ["N-gram","1-Digit","3-Digit", "5-Digit", "DigitLoop"]
-wer = [12,10.5,15,11.2,27]
+wer = [12.3,10.5,15,11.3,23.6]
 words = [1000,200,300,500,1000]
 #some confidence interval
 ci = [ get_confidence_interval(w,i) for w, i in zip(wer, words)]
 
 fig, ax = plt.subplots()
-
-
 ax.errorbar(x=language_models, y=wer, yerr=ci, color="red", capsize=5,
              linestyle="None",
              marker="s", markersize=7, mfc="green", mec="blue")

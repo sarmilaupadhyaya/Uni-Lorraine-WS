@@ -11,7 +11,7 @@ then
   usage
 fi
 
-pred_file="../results/task4/pred_$2man$4"
-ref_file="../results/task4/ref_$2man$4"
+pred_file="results/task4/pred_$2man$4"
+ref_file="results/task4/ref_$2man$4"
 
 wer -i ${pred_file} ${ref_file}

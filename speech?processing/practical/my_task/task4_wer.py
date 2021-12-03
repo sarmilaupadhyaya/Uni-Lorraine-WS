@@ -10,7 +10,7 @@ def get_confidence_interval(wer, words):
 
 # this was for man with 35 SNR db data with 5 different models
 language_models = ["SNR35", "SNR25", "SNR15", "SNR05"]
-wer = [10.5,11.5, 18, 62.5]
+wer = [10.5,11.5, 18, 94.697]
 words = [200,200,200,200,200]
 #some confidence interval
 ci = [ get_confidence_interval(w,i) for w, i in zip(wer, words)]
@@ -29,13 +29,13 @@ plt.xlabel("Noise level", fontsize=12)
 
 plt.ylabel("Word Error Rate (%)", fontsize=12)
 plt.title("Performance of ASR System with respect to noise level for 1 digit", fontsize=12)
-plt.savefig('my_task/task_4_1digit.png',dpi=300)
+plt.savefig('results/figures/task_4_1digit.png',dpi=300)
 plt.show()
 
 
 # this was for man with 35 SNR db data with 5 different models
 language_models = ["SNR35", "SNR25", "SNR15", "SNR05"]
-wer = [15,16.6,19.67,64.33]
+wer = [15,16.6,19.67,93.237]
 words = [300,300,300,300]
 #some confidence interval
 ci = [ get_confidence_interval(w,i) for w, i in zip(wer, words)]
@@ -54,13 +54,13 @@ plt.xlabel("Noise level", fontsize=12)
 
 plt.ylabel("Word Error Rate (%)", fontsize=12)
 plt.title("Performance of ASR System with respect to noise level for 3 digits", fontsize=12)
-plt.savefig('my_task/task_4_3digit.png',dpi=300)
+plt.savefig('results/figures/task_4_3digit.png',dpi=300)
 plt.show()
 
 
 # this was for man with 35 SNR db data with 5 different models
 language_models = ["SNR35", "SNR25", "SNR15", "SNR05"]
-wer = [11.2,11.4,16.08,57.2]
+wer = [11.3,11.4,16.97,76.27]
 words = [200,200,200,200,200]
 #some confidence interval
 ci = [ get_confidence_interval(w,i) for w, i in zip(wer, words)]
@@ -79,6 +79,6 @@ plt.xlabel("Language Models", fontsize=12)
 
 plt.ylabel("Word Error Rate (%)", fontsize=12)
 plt.title("Performance of ASR System with respect to noise level for 5 digits", fontsize=12)
-plt.savefig('my_task/task_4_5digit.png',dpi=300)
+plt.savefig('results/figures/task_4_5digit.png',dpi=300)
 plt.show()
 

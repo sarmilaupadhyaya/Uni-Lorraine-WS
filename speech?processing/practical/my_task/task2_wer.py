@@ -9,9 +9,9 @@ def get_confidence_interval(wer, words):
 
 
 # this was for man with 35 SNR db data with 5 different models
-language_models = ["Man-1digit","Man-3Digit","Man-5Digit", "Woman-1digit","Woman-3Digit","Woman-5Digit","Girl-1digit","Girl-3Digit","Girl-5Digit","Boy-1digit","Boy-3Digit","Boy-5Digit"]
-wer = [10.5, 15, 11.2, 10.5, 10, 7.8, 24, 22.33, 26.8, 17.5,20,18]
-words = [200,300,500,200,300,500,200,300,500,200,300,500]
+language_models = ["Man", "Woman","Girl","Boy"]
+wer = [10.5,10.5, 24, 17.5]
+words = [200,200,200,200]
 #some confidence interval
 ci = [ get_confidence_interval(w,i) for w, i in zip(wer, words)]
 
@@ -28,6 +28,58 @@ ax.xaxis.grid(color='gray', linestyle='dashed')
 plt.xlabel("Speaker Group", fontsize=12)
 
 plt.ylabel("Word Error Rate (%)", fontsize=12)
-plt.title("Performance of ASR System with respect to speaker group", fontsize=12)
-plt.savefig('task_2.png',dpi=300)
+plt.title("Performance of ASR System with respect to speaker group for 1 digit", fontsize=12)
+plt.savefig('results/figures/task_2_1.png',dpi=300)
+plt.show()
+
+
+
+
+# this was for man with 35 SNR db data with 5 different models
+language_models = ["Man", "Woman","Girl","Boy"]
+wer = [15,10, 22.6, 20]
+words = [300,300,300,300]
+#some confidence interval
+ci = [ get_confidence_interval(w,i) for w, i in zip(wer, words)]
+
+fig, ax = plt.subplots()
+
+
+ax.errorbar(x=language_models, y=wer, yerr=ci, color="red", capsize=5,
+             linestyle="None",
+             marker="s", markersize=7, mfc="green", mec="blue")
+ax.set_axisbelow(True)
+ax.yaxis.grid(color='gray', linestyle='dashed')
+ax.xaxis.grid(color='gray', linestyle='dashed')
+
+plt.xlabel("Speaker Group", fontsize=12)
+
+plt.ylabel("Word Error Rate (%)", fontsize=12)
+plt.title("Performance of ASR System with respect to speaker group for 3 digits", fontsize=12)
+plt.savefig('results/figures/task_2_2.png',dpi=300)
+plt.show()
+
+
+# this was for man with 35 SNR db data with 5 different models
+language_models = ["Man", "Woman","Girl","Boy"]
+wer = [11.31,7.8,26.8,18]
+words = [200,200,200,200]
+#some confidence interval
+ci = [ get_confidence_interval(w,i) for w, i in zip(wer, words)]
+
+fig, ax = plt.subplots()
+
+
+ax.errorbar(x=language_models, y=wer, yerr=ci, color="red", capsize=5,
+             linestyle="None",
+             marker="s", markersize=7, mfc="green", mec="blue")
+ax.set_axisbelow(True)
+ax.yaxis.grid(color='gray', linestyle='dashed')
+ax.xaxis.grid(color='gray', linestyle='dashed')
+
+plt.xlabel("Speaker Group", fontsize=12)
+
+plt.ylabel("Word Error Rate (%)", fontsize=12)
+plt.title("Performance of ASR System with respect to speaker group for 5 digits", fontsize=12)
+plt.savefig('results/figures/task_2_3.png',dpi=300)
 plt.show()

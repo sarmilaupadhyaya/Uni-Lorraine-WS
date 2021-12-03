@@ -29,5 +29,4 @@ plt.xlabel("digit sequence", fontsize=12)
 
 plt.ylabel("Word Error Rate (%)", fontsize=12)
 plt.title("Performance of ASR System with respect to length of digit sequence", fontsize=12)
-plt.savefig('my_task/task_3.png',dpi=300)
 plt.show()
