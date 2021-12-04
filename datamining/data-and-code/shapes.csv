@@ -1,0 +1,5 @@
+Shape,Has 3 Vertices,Has 4 vertices,Has a direct angle,Equilateral
+Equilateral triangle,true,false,false,true
+Rectangle triangle,true,false,true,false
+Rectangle,false,true,true,false
+Square,false,true,true,true

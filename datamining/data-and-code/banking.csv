@@ -1,0 +1,27 @@
+Case,Country,BankType,Owner,Code,CorpC,FinLib,RegInt,BList,Wolfs
+ABNAmro,NLD,Universal,Public,No,0.74,0.98,144,Yes,No
+Barclays,GBR,Commercial,Public,Explicit,0.14,1,277,Yes,Yes
+BNP Paribas,FRA,Universal,Public,Implicit,0.82,1,75,No,No
+Carnegie,SWE,Investment,Public,No,0.71,0.95,83,No,No
+Citigroup,USA,Commercial,Public,Explicit,0,1,426,Yes,Yes
+Coutts \& Co,GBR,Private,Public,Implicit,0.14,1,277,Yes,No
+CS,CHE,Universal,Public,Explicit,0.44,0.95,83,Yes,Yes
+Deutsche Bank,GER,Universal,Public,Explicit,0.95,0.9,45,No,Yes
+Goldman Sachs,USA,Investment,Public,Explicit,0,1,426,Yes,Yes
+HSBC,GBR,Commercial,Public,Implicit,0.14,1,277,Yes,Yes
+ING,NLD,Universal,Public,Implicit,0.74,0.98,144,Yes,No
+JPMorgan,USA,Commercial,Public,Explicit,0,1,426,Yes,Yes
+Julius Baer,CHE,Private,Public,No,0.44,0.95,83,Yes,No
+LCF,FRA,Private,Private,No,0.82,1,75,No,No
+LODH,CHE,Private,Private,No,0.44,0.95,83,Yes,No
+MeesPierson,NLD,Private,Public,No,0.74,0.98,144,Yes,No
+Merrill Lynch,USA,Investment,Public,Implicit,0,1,426,Yes,No
+Morgan S,USA,Investment,Public,Explicit,0.14,1,277,Yes,No
+Nordea,SWE,Universal,Public,Implicit,0.71,0.95,83,No,No
+Pictet & Cie,CHE,Private,Private,No,0.44,0.95,83,Yes,No
+RBC,CAN,Universal,Public,Explicit,0.23,1,149,No,No
+Rothschild,GBR,Investment,Private,No,0.14,1,277,Yes,No
+Santander,ESP,Universal,Public,Explicit,0.77,1,53,No,Yes
+SG,FRA,Universal,Public,Explicit,0.82,1,75,No,Yes
+UBP,CHE,Private,Private,No,0.44,0.95,83,Yes,No
+UBS,CHE,Universal,Public,Explicit,0.44,0.95,83,Yes,Yes
